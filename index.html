@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="head">
+    <div class="container">
+      <h1 class="head-title">Bookshelf Apps</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="input-section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="form-book">
+          <div class="form-input">
+            <label for="input-title">Judul</label>
+            <input id="input-title" type="text" placeholder="Masukkan Judul" required />
+          </div>
+          <div class="form-input">
+            <label for="input-author">Penulis</label>
+            <input id="input-author" type="text" placeholder="Masukkan Penulis" required />
+          </div>
+          <div class="form-input">
+            <label for="input-year">Tahun Terbit</label>
+            <input id="input-year" type="number" placeholder="Masukkan Tahun Terbit" required />
+          </div>
+          <div class="form-inputinline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <div class="btn">
+            <button id="book-submit" type="submit" class="btn btn-submit">
+              Tambahkan</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <form class="search-section" id="form-search">
+        <h2>Cari Buku</h2>
+        <input id="search-title" type="text" placeholder="Cari buku berdasarkan judul" />
+      </form>
+
+      <section class="book-shelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incomplete-book" class="book-list">
+        </div>
+      </section>
+
+      <section class="book-shelf">
+        <h2>Selesai dibaca</h2>
+        <div id="complete-book" class="book-list">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
